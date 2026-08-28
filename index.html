@@ -300,6 +300,31 @@
     margin-top: 2px;
   }
 
+  /* AVIS0 DE PEDIDO */
+  .order-warning {
+    margin-top: 14px;
+    padding: 12px 14px;
+    border-radius: 10px;
+    background: #fff8e1;
+    border: 1px solid #f0c36d;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #5f4b1f;
+  }
+
+  .order-warning strong {
+    color: #4a3a12;
+  }
+
+  .order-warning p {
+    margin: 6px 0 0;
+  }
+
+  .order-warning p:first-of-type {
+    margin-top: 8px;
+  }
+
+
   @media (max-width:640px){
     header{ padding:14px 18px; }
     .hero{ padding:40px 18px 28px; }
@@ -333,12 +358,11 @@
     <p>Catálogo completo da linha 13 até a 17 Pro Max — chip, tela, câmera, cores e preço de cada modelo. Monte seu pedido e finalize direto no WhatsApp.</p>
   </div>
   <div class="seal">
-    <div class="seal-row"><span>Condição</span><b>Novo / Seminovo</b></div>
-    <div class="seal-row"><span>Garantia</span><b>1 ano</b></div>
-    <div class="seal-row"><span>Entrega</span><b>Combinada no Whats</b></div>
-    <div class="seal-row"><span>Pagamento</span><b>Pix / Cartão</b></div>
-    <div class="seal-row"><span>Suporte</span><b>WhatsApp / Telefone</b></div>
-    <div class="seal-row"><span>Entrega</span><b>Após o pedido ser confirmado, pedimos uma sinal parcial que varia de acordo com o valor do pedido, sendo devolvido após a entrega, prazo de 1 dia util para recebimento do iPhone</b></div>
+    <div class="seal-row"><span>Condição</span><b>Novo/Seminovo</b></div>
+    <div class="seal-row"><span>Garantia</span><b>6 meses</b></div>
+    <div class="seal-row"><span>Entrega</span><b>1 dia útil</b></div>
+    <div class="seal-row"><span>Pagamento</span><b>Pix/Cartão/Dinheiro</b></div>
+    <div class="seal-row"><span>Suporte</span><b>Whats:(45)99912-4898</b></div>
   </div>
 </section>
 
@@ -347,22 +371,32 @@
 <div class="grid" id="grid"></div>
 
 <div class="overlay" id="overlay" onclick="toggleCart(false)"></div>
-<aside class="drawer" id="drawer">
-  <div class="drawer-head">
-    <h2>Seu pedido</h2>
-    <button class="close-btn" onclick="toggleCart(false)">✕</button>
-  </div>
+<aside class="drawer" id="drawer"> <div class="drawer-head"> <h2>Seu pedido</h2> <button class="close-btn" onclick="toggleCart(false)">✕</button> </div>
+
   <div class="drawer-body" id="drawerBody"></div>
-  <div class="drawer-foot">
-    <div class="total-row">
-      <span class="label">Total</span>
-      <span class="amount mono" id="totalAmount">R$ 0</span>
-    </div>
+
+    <div class="drawer-foot"> <div class="total-row"> <span class="label">Total</span> <span class="amount mono" id="totalAmount">R$ 0</span> </div>
+
     <button class="whatsapp-btn" id="checkoutBtn" onclick="checkoutWhatsApp()" disabled>
       Finalizar pedido no WhatsApp
     </button>
-    <p class="note">Ao finalizar, o pedido é montado automaticamente e enviado para o nosso WhatsApp — nenhuma cobrança é feita aqui.</p>
-  </div>
+
+    <div class="order-warning">
+      <strong>⚠️ Aviso sobre pedidos de iPhone</strong>
+      <p>
+        Após a confirmação do pedido, solicitamos um <strong>sinal parcial</strong>,
+        cujo valor varia de acordo com o valor total do pedido. Esse sinal será
+        <strong>devolvido após a entrega do aparelho</strong>.
+      </p>
+      <p><strong>📦 Prazo para Entrega: até 1 dia útil.</strong></p>
+    </div>
+
+    <p class="note">
+      Ao finalizar, o pedido é montado automaticamente e enviado para o nosso WhatsApp —
+      nenhuma cobrança é feita aqui.
+    </p>
+
+  </div> 
 </aside>
 
 <footer>&copy;Todos os direitos reservados Dynamic Informática · Dynamic Iphones 2026</footer>
