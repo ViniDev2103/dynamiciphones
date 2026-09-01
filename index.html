@@ -617,9 +617,9 @@ function renderGrid(){
           </span>
         </div>
         <div class="price-installment">
-          <span class="price-label">Ou 10x de</span>
+          <span class="price-label">Ou 12x de</span>
           <span class="price mono">
-            ${fmtBRL((variant.price + (variant.price * 0.04) + (variant.price * 0.11576)) / 10)}
+            ${fmtBRL((variant.price + (variant.price * 0.04) + (variant.price * 0.14706)) / 12)}
           </span>
         </div>
       </div>
@@ -732,12 +732,12 @@ function renderCartDrawer(){
             </div>
 
             <div class="cart-price-installment">
-              Ou 10x de
+              Ou 12x de
               <strong>
                 ${fmtBRL(
                   ((item.price * item.qty) +
                   ((item.price * item.qty) * 0.04) +
-                  ((item.price * item.qty) * 0.11576)) / 10
+                  ((item.price * item.qty) * 0.14706)) / 12
                 )}
               </strong>
             </div>
